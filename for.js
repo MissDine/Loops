@@ -1,4 +1,5 @@
-// Three stages: initialiation(variable declaration),condition,final expression,statement 
+// Three stages: initialiation(variable declaration),condition,final expression,statement
+// for ([initialization]; [condition]; [iteration]) {[loop body(statement)]} 
 let family = ["Maosa","Moma","Moraa","Marube"]
 function LoopThrough(family){
     for(let i = 0; i < family.length; i++){
@@ -25,6 +26,8 @@ const stores = {name:"laptop", price:1000, count:5}
 function LoopThroughObj(obj){
     for(let key in obj){
         console.log(key);
+        // ton find the key value
+        console.log(obj[key]);
     }
 }
 LoopThroughObj(stores)
